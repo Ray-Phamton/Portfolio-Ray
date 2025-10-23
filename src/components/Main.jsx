@@ -13,7 +13,7 @@ export function Main () {
         <section className='flex flex-col sm:flex-row lg:pl-32 md:pl-20 sm:pl-12 justify-center items-center h-full z-10 pt-20'>
           <section className='flex flex-col justify-center sm:items-stretch sm:w-1/2 items-center h-full gap-2 z-10'>
             <img className=' sm:hidden h-52 rounded-full object-cover mt-6' src='https://raw.githubusercontent.com/Ray-Phamton/mini-portfolio/refs/heads/master/public/Raymon-perfil.jpeg' alt='image of Raymon Reyes' />
-            <h1 className='lg:text-6xl md:text-5xl text-4xl font-extrabold mb-4 text-gray-100'>Raymon Reyes</h1>
+            <h1 className='lg:text-6xl md:text-5xl text-4xl font-extrabold sm:mb-4 text-gray-100'>Raymon Reyes</h1>
             <div className='flex sm:hidden items-center h-1/5 gap-4 pt-6'>
               <SocialBubbles />
             </div>
@@ -33,33 +33,46 @@ export function Main () {
 
       </section>
 
-      <section id='About-me' className='flex items-center justify-center bg-gradient-to-b from-purple-950  via-black via-40%  to-zinc-900 h-screen z-10'>
-        <div className=' bg-zinc-800 h-4/5 w-11/12 p-10 rounded-3xl '>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100'>➣ Acerca de mí</h2>
-          <p className='lg:text-lg sm:text-base text-sm text-gray-100'>Soy Raymon Reyes, Desarrollador Web Junior apasionado por fusionar la estética visual con la funcionalidad. Mi objetivo no es solo escribir código, sino construir productos digitales que las personas disfruten usar.</p>
-        </div>
-      </section>
+      <section className='flex flex-col items-center justify-center bg-gradient-to-b from-purple-950  via-black via-5%  to-zinc-900 z-10 gap-20 pt-20'>
+        <div id='About-me' className=' bg-zinc-800 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70 mx-auto'>
+          <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Acerca de mí</h2>
+          <p className='lg:text-lg sm:text-base text-sm sm:w-3/4 w-full text-gray-100 mb-6'>  ¡Hola!, soy Raymon Reyes, tengo 19 años y soy un Desarrollador Web Junior apasionado por crear aplicaciones web responsivas y funcionales. Mi interés destaca en el desarrollo frontend utilizando la eficiencia de React y la velocidad de Tailwind CSS para crear interfaces rápidas, responsivas y, sobre todo, altamente intuitivas. Mi objetivo no es solo escribir código, sino construir productos digitales que las personas disfruten usar y encuentren utilidad dentro de ellas.
+          </p>
 
-      <section id='Study' className='flex items-center justify-center bg-zinc-900 h-screen z-10 '>
-        <div className=' bg-zinc-800 h-4/5 w-11/12 p-10 rounded-3xl '>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100'>➣ Estudios</h2>
+          <p className='lg:text-lg sm:text-base text-sm sm:w-3/4 w-full text-gray-100 mb-6'>
+            Mi viaje en el desarrollo comenzó en la universidad, actualmente estoy cursando la licenciatura en ingeniería de sistemas, durante este periodo descubrí la programacion, partiendo desde C++ un lenguaje de nivel intermedio donde senté las bases de mi lógica de programación, sin embargo, me he dedicado a estudiar lenguajes de desarrollo y diseño web como Javascript,PHP,HTML,CSS y en el uso de frameworks modernos como React y Tailwind CSS, todo esto con el objetivo de materializar mis ideas y desarrollar capacidades óptimas para dedicarme a esta ocupación.
+          </p>
+
+          <p className='lg:text-lg sm:text-base text-sm  sm:w-3/4 w-full text-gray-100'>
+            Actualmente, estoy buscando la oportunidad de desenvolverme como Desarrollador Frontend en un equipo que valore la innovación y la calidad del código, donde pueda aplicar y seguir expandiendo mis habilidades como desarrollador. Estoy siempre abierto a colaborar en proyectos interesantes y a aprender de profesionales con experiencia. ¡No dudes en contactarme!.
+          </p>
+
+          <div className='mt-8 pt-4 border-t border-violet-600'>
+            <h3 className='text-xl font-bold text-gray-100 mb-4'><span className='text-violet-600'>➣</span> Mi Enfoque</h3>
+            <ul className='flex flex-wrap gap-4'>
+              <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full'>💡 Resolución de Problemas</li>
+              <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full'>🤝 Colaboración</li>
+              <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full'>📈 Aprendizaje Rápido</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id='Study' className=' bg-zinc-800 h-96 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
+          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100 h-16 border-b-2 '>➣ Estudios</h2>
+          <p />
+        </div>
+
+        <div id='Experience' className=' bg-zinc-800 h-96 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
+          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100 h-16 border-b-2'>➣ Experiencia</h2>
+          <p />
+        </div>
+
+        <div id='Projects' className=' bg-zinc-800 h-96 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
+          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100 h-16 border-b-2'>➣Proyectos</h2>
           <p />
         </div>
       </section>
 
-      <section id='Experience' className='flex items-center justify-center bg-zinc-900 h-screen z-10'>
-        <div className=' bg-zinc-800 h-4/5 w-11/12 p-10 rounded-3xl '>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100'>➣ Experiencia</h2>
-          <p />
-        </div>
-      </section>
-
-      <section id='Projects' className='flex items-center justify-center bg-zinc-900 h-screen z-10 '>
-        <div className=' bg-zinc-800 h-4/5 w-11/12 p-10 rounded-3xl '>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl font-extrabold mb-4 text-gray-100'>➣Proyectos</h2>
-          <p />
-        </div>
-      </section>
     </main>
 
   )
