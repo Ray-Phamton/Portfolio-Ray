@@ -1,6 +1,7 @@
 import ParticleBackground from './BackgroundParticles'
+import { ExperienceCard } from './Cards/ExperienceCard'
 import { SocialBubbles } from './SocialBubbles'
-import { StudyCard } from './StudyCard'
+import { StudyCard } from './Cards/StudyCard'
 
 export function Main () {
   return (
@@ -36,7 +37,9 @@ export function Main () {
 
       <section className='flex flex-col items-center justify-center bg-gradient-to-b from-purple-950  via-black via-5%  to-zinc-900 z-10 gap-20 pt-20'>
         <section id='About-me' className=' bg-zinc-800 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70 mx-auto'>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Acerca de mí</h2>
+          <header>
+            <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Acerca de mí</h2>
+          </header>
           <p className='lg:text-lg sm:text-base text-sm sm:w-3/4 w-full text-gray-100 mb-6'>  ¡Hola!, soy Raymon Reyes, tengo 19 años y soy un Desarrollador Web Junior apasionado por crear aplicaciones web responsivas y funcionales. Mi interés destaca en el desarrollo frontend utilizando la eficiencia de React y la velocidad de Tailwind CSS para crear interfaces rápidas, responsivas y, sobre todo, altamente intuitivas. Mi objetivo no es solo escribir código, sino construir productos digitales que las personas disfruten usar y encuentren utilidad dentro de ellas.
           </p>
 
@@ -48,18 +51,20 @@ export function Main () {
             Actualmente, estoy buscando la oportunidad de desenvolverme como Desarrollador Frontend en un equipo que valore la innovación y la calidad del código, donde pueda aplicar y seguir expandiendo mis habilidades como desarrollador. Estoy siempre abierto a colaborar en proyectos interesantes y a aprender de profesionales con experiencia. ¡No dudes en contactarme!.
           </p>
 
-          <div className='mt-8 pt-4 border-t border-violet-600'>
+          <footer className='mt-8 pt-4 border-t border-violet-600'>
             <h3 className='text-xl font-bold text-gray-100 mb-4'><span className='text-violet-600'>➣</span> Mi Enfoque</h3>
             <ul className='flex flex-wrap gap-4'>
               <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full hover:scale-110 hover:shadow-lg hover:shadow-violet-700/50 transition'>💡 Resolución de Problemas</li>
               <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full hover:scale-110 hover:shadow-lg hover:shadow-violet-700/70 transition'>🤝 Colaboración</li>
               <li className='flex items-center text-zinc-200 bg-gradient-to-tr from-violet-600 via-indigo-00 via-80% to-blue-600 px-4 py-2 rounded-full hover:scale-110 hover:shadow-lg hover:shadow-violet-700/70 transition'>📈 Aprendizaje Rápido</li>
             </ul>
-          </div>
+          </footer>
         </section>
 
         <section id='Study' className=' bg-zinc-800 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Estudios</h2>
+          <header>
+            <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Estudios</h2>
+          </header>
 
           <StudyCard
             year='2022 — Actualidad'
@@ -94,29 +99,49 @@ export function Main () {
         </section>
 
         <section id='Experience' className=' bg-zinc-800 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Experiencia relevante</h2>
-          <div className='relative mb-12 pl-10 border-l border-zinc-600'>
-            <div className='absolute -left-2 top-1 w-4 h-4 rounded-full bg-violet-500 ring-4 ring-zinc-800' />
+          <header>
+            <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Experiencia relevante</h2>
+          </header>
+          <main className='flex flex-col lg:flex-row sm:justify-around '>
 
-            <div className='bg-zinc-700 p-6 rounded-lg shadow-md hover:shadow-violet-700/50 transition duration-300'>
-              <div className='flex flex-col items-start mb-2'>
-                <h3 className='text-xl font-bold text-gray-100'>Líder del Equipo de AI</h3>
-                <p className='text-sm font-semibold text-violet-400'>Marzo 2025 – julio 2025</p>
+            <ExperienceCard
+              role='Líder de Equipo de AI'
+              team='Buffer-Ring'
+              timeframe='Marzo 2025 - julio 2025'
+              achievements={[
+                'Lideré un equipo de 4 miembros para integrar la Inteligencia Artificial y acelerar el desarrollo del e-commerce "Car-Fix".',
+                'Gestioné el flujo de trabajo del equipo, delegando tareas y asegurando el cumplimiento de objetivos bajo un esquema de desarrollo ágil.',
+                'Implementé y gestioné procesos de Git/GitHub para mantener la integridad del código base de la organización.'
+              ]}
+            >
+              <div className='mt-4 pt-4 border-t border-zinc-600 '>
+                <a href='https://www.bufferring.org/' target='_blank' className='mb-4 inline-block text-violet-400 hover:text-violet-300 transition duration-150 text-sm font-medium' rel='noreferrer'>
+                  Ver Buffer-Ring →
+                </a>
               </div>
-              <p className='text-md font-medium text-zinc-300 mb-4'>Buffer-Ring (Organización sin Fines de Lucro)</p>
-
-              <ul className='list-disc list-inside space-y-2 text-zinc-300 text-sm ml-4'>
-                <li>Lideré un equipo de 4 miembros para integrar la Inteligencia Artificial y acelerar el desarrollo del e-commerce "Car-Fix".</li>
-                <li>Gestioné el flujo de trabajo del equipo, delegando tareas y asegurando el cumplimiento de objetivos bajo un esquema de desarrollo ágil.</li>
-                <li>Implementé y gestioné procesos de Git/GitHub (forks, pull requests, commits, amends, etc) para mantener la integridad del código base de la organización.</li>
-                <li>Investigué e implementé la funcionalidad beta de un asistente virtual, llevando conceptos AI a la funcionalidad web.</li>
-              </ul>
-
-              <a href='https://www.bufferring.org/' target='_blank' className='mt-4 inline-block text-violet-400 hover:text-violet-300 transition duration-150 text-sm font-medium' rel='noreferrer'>
-                Ver Buffer-Ring →
-              </a>
+            </ExperienceCard>
+            <ExperienceCard
+              role='Especialista en UI de Consola (CLI)'
+              team='Equipo de Universidad'
+              timeframe='Octubre 2024 - febrero 2025'
+              achievements={[
+                'Colaboré en un juego didáctico en C++ enfocado en el aprendizaje de nuevas palabras y la expansión del léxico.',
+                'Lideré la investigación y la implementación de técnicas para mostrar una interfaz gráfica (UI) clara y decente directamente desde la terminal (CLI).',
+                'Fortalecí las bases de mi lógica de programación y la aplicación de estructuras de datos.'
+              ]}
+            />
+          </main>
+          <footer>
+            <div className='mt-12 text-center'>
+              <p className='text-lg text-gray-600 dark:text-gray-300'>
+                ¿Interesado en más detalles?
+                {/* for future updates */}
+                <a href='#contacto' className='text-indigo-400 font-semibold hover:underline ml-2'>
+                  ¡Hablemos de tu proyecto!
+                </a>
+              </p>
             </div>
-          </div>
+          </footer>
         </section>
 
         <section id='Projects' className=' bg-zinc-800 h-96 w-11/12 p-10 rounded-3xl shadow-2xl shadow-violet-800/70'>
@@ -129,3 +154,26 @@ export function Main () {
 
   )
 }
+
+  <div className='relative mb-12 pl-10 border-l border-zinc-600'>
+    <div className='absolute -left-2 top-1 w-4 h-4 rounded-full bg-violet-500 ring-4 ring-zinc-800' />
+
+    <div className='bg-zinc-700 p-6 rounded-lg shadow-md hover:shadow-violet-700/50 transition duration-300'>
+      <div className='flex flex-col items-start mb-2'>
+        <h3 className='text-xl font-bold text-gray-100'>Líder del Equipo de AI</h3>
+        <p className='text-sm font-semibold text-violet-400'>Marzo 2025 – julio 2025</p>
+      </div>
+      <p className='text-md font-medium text-zinc-300 mb-4'>Buffer-Ring (Organización sin Fines de Lucro)</p>
+
+      <ul className='list-disc list-inside space-y-2 text-zinc-300 text-sm ml-4'>
+        <li>Lideré un equipo de 4 miembros para integrar la Inteligencia Artificial y acelerar el desarrollo del e-commerce "Car-Fix".</li>
+        <li>Gestioné el flujo de trabajo del equipo, delegando tareas y asegurando el cumplimiento de objetivos bajo un esquema de desarrollo ágil.</li>
+        <li>Implementé y gestioné procesos de Git/GitHub (forks, pull requests, commits, amends, etc) para mantener la integridad del código base de la organización.</li>
+        <li>Investigué e implementé la funcionalidad beta de un asistente virtual, llevando conceptos AI a la funcionalidad web.</li>
+      </ul>
+
+      <a href='https://www.bufferring.org/' target='_blank' className='mt-4 inline-block text-violet-400 hover:text-violet-300 transition duration-150 text-sm font-medium' rel='noreferrer'>
+        Ver Buffer-Ring →
+      </a>
+    </div>
+  </div>
