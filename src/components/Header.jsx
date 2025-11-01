@@ -21,9 +21,9 @@ export function Header () {
               ● <span className='hover:underline active:no-underline'>Experiencia</span>
             </li>
           </a>
-          <a href='#Projects'>
+          <a href='#tools'>
             <li className='hidden md:inline hover:text-purple-600 text-xl font-medium mb-2 text-gray-100'>
-              ● <span className='hover:underline active:no-underline'>Proyectos</span>
+              ● <span className='hover:underline active:no-underline'>Herramientas</span>
             </li>
           </a>
         </ul>
