@@ -17,7 +17,7 @@ export function ExperienceCard ({ role, team, timeframe, icon, achievements, chi
           </span>
         </div>
       </div>
-      <div className='mt-6 flex-grow mr-10 lg:mr-8'>
+      <div className='mt-6 grow mr-10 lg:mr-8'>
         <p className='font-semibold text-gray-300 mb-2'>
           🎯 Logros Destacados:
         </p>

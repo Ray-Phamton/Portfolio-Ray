@@ -7,6 +7,11 @@ import SkillCard from './Cards/SkillCard'
 
 const reactPath = svgData['React-Svg'].path
 const tailwindPath = svgData['Tailwind-Svg'].path
+const javaScriptPath = svgData['JavaScript-Svg'].path
+const htmlPath = svgData['HTML-Svg'].path
+const pythonPath = svgData['Python-Svg'].path
+const phpPath = svgData['PHP-Svg'].path
+
 export function Main () {
   return (
 
@@ -18,7 +23,7 @@ export function Main () {
 
         <section className='flex flex-col sm:flex-row lg:pl-32 md:pl-20 sm:pl-12  h-full z-10 pt-20'>
           <section className='flex flex-col justify-center sm:items-stretch sm:w-1/2 items-center h-full gap-2 z-10'>
-            <img className=' sm:hidden h-52 rounded-full object-cover mt-6' src='https://raw.githubusercontent.com/Ray-Phamton/mini-portfolio/refs/heads/master/public/Raymon-perfil.jpeg' alt='image of Raymon Reyes' />
+            <img className=' sm:hidden h-52 mask-radial-at-center mask-radial-from-58% mask-radial-to-75% rounded-full object-cover mt-6' src='https://raw.githubusercontent.com/Ray-Phamton/mini-portfolio/refs/heads/master/public/Raymon-perfil.jpeg' alt='image of Raymon Reyes' />
             <h1 className='lg:text-6xl md:text-5xl text-4xl font-extrabold sm:mb-4 text-gray-100'>Raymon Reyes</h1>
             <div className='flex sm:hidden items-center h-1/5 gap-4 pt-6'>
               <SocialBubbles />
@@ -30,7 +35,7 @@ export function Main () {
           </section>
 
           <section className='hidden sm:flex flex-col justify-center items-center h-full w-1/2 z-10'>
-            <img className=' lg:h-80 md:h-72 sm:h-60 h-52 rounded-full object-cover' src='https://raw.githubusercontent.com/Ray-Phamton/mini-portfolio/refs/heads/master/public/Raymon-perfil.jpeg' alt='image of Raymon Reyes' />
+            <img className=' lg:h-80 md:h-72 sm:h-60 h-52  mask-radial-at-center mask-radial-from-58% mask-radial-to-75% rounded-full object-cover' src='https://raw.githubusercontent.com/Ray-Phamton/mini-portfolio/refs/heads/master/public/Raymon-perfil.jpeg' alt='image of Raymon Reyes' />
             <div className='flex items-center h-1/5 md:gap-8 sm:gap-2 gap-4 pt-24'>
               <SocialBubbles />
             </div>
@@ -159,20 +164,67 @@ export function Main () {
               svgPath={reactPath}
               iconTitle='React-Logo'
               backgroundShadowColors='from-blue-500 via-blue-600 to-blue-900 shadow-sky-700/30 hover:shadow-sky-700/80'
-              animationPositionSize='size-20 -top-4 -right-4 group-hover:scale-125 rotate-45 group-hover:rotate-0 transition-transform'
-              mainColor='sky-400'
+              animationPositionSize='absolute size-20 -top-4 -right-4 group-hover:scale-125 rotate-45 group-hover:rotate-0 transition-transform'
+              textColor='text-sky-400'
+              borderColor='border-sky-400'
               progressBarColors='from-sky-200 via-60% via-sky-400 to-sky-600'
-              progress={75}
+              progress={70}
             />
             <SkillCard
               name='Tailwind CSS'
               svgPath={tailwindPath}
               iconTitle='Tailwind-Logo'
-              backgroundShadowColors='from-slate-900 to-gray-950 shadow-gray-950/70 hover:shadow-gray-950'
-              animationPositionSize='size-16 top-0 right-4 group-hover:scale-110 transition'
-              mainColor='sky-500'
+              backgroundShadowColors='from-slate-900 to-gray-950 shadow-gray-950 hover:shadow-black'
+              animationPositionSize='absolute size-16 top-0 right-4 group-hover:scale-110 transition'
+              textColor='text-sky-600'
+              borderColor='border-sky-600'
               progressBarColors='from-sky-400 via-60% via-sky-600 to-sky-800'
               progress={90}
+            />
+            <SkillCard
+              name='JavaScript'
+              svgPath={javaScriptPath}
+              iconTitle='JavaScript-Logo'
+              backgroundShadowColors='from-yellow-400 to-orange-500 shadow-yellow-400/50 hover:shadow-yellow-300'
+              animationPositionSize='absolute size-12 top-2 right-8 group-hover:scale-110 transition'
+              textColor='text-yellow-300 bg-black'
+              borderColor='border-yellow-300'
+              progressBarColors='from-yellow-300 via-60% via-yellow-400 to-yellow-500'
+              progress={75}
+            />
+            <SkillCard
+              name='HTML'
+              svgPath={htmlPath}
+              iconTitle='HTML-Logo'
+              backgroundShadowColors='from-orange-600 via-70% via-amber-400 to-orange-500 shadow-orange-600/50 hover:shadow-orange-600'
+              animationPositionSize='absolute size-12 top-2 right-8 group-hover:scale-110 transition'
+              textColor='text-orange-600 bg-radial-[at_50%_30%] from-black from-55% via-transparent via-55% to-transparent'
+              borderColor='border-orange-600'
+              progressBarColors='from-orange-600 to-orange-400'
+              progress={90}
+            />
+            <SkillCard
+              name='Python'
+              svgPath={pythonPath}
+              iconTitle='Python-Logo'
+              backgroundShadowColors=' from-indigo-600 to-cyan-400 shadow-indigo-600/50 hover:shadow-blue-600'
+              animationPositionSize='absolute size-12 top-2 right-8 group-hover:scale-110 transition'
+              textColor='text-indigo-600 '
+              borderColor='border-indigo-700'
+              progressBarColors='from-indigo-600 to-cyan-300'
+              progress={60}
+            />
+            <SkillCard
+              name='PHP'
+              svgPath={phpPath}
+              iconTitle='PHP-Logo'
+              backgroundShadowColors='from-indigo-700 via-60% via-violet-500 to-violet-500 shadow-violet-600/50 hover:shadow-violet-500'
+              animationPositionSize='size-16 top-1 right-6 group-hover:scale-110 transition'
+              background2='bg-radial-[at_30%_50%] from-black from-20% via-transparent via-30% to-transparent'
+              textColor='text-violet-700 bg-radial-[at_60%_50%] from-black from-35% via-transparent via-35% to-transparent'
+              borderColor='border-purple-700'
+              progressBarColors='from-purple-700 via-violet-700 to-violet-800'
+              progress={50}
             />
           </main>
         </section>
