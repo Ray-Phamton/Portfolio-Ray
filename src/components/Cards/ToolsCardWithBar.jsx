@@ -1,4 +1,4 @@
-const SkillCard = ({
+const ToolsCard = ({
   name,
   background2,
   svgPath,
@@ -67,4 +67,4 @@ const SkillCard = ({
   )
 }
 
-export default SkillCard
+export default ToolsCard
