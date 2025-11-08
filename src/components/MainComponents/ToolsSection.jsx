@@ -26,7 +26,7 @@ export function ToolsSection () {
           <ToolsCard
             backgroundShadowColors='from-yellow-400 to-orange-500 shadow-yellow-400/50 hover:shadow-yellow-300'
             borderColor='border-yellow-300'
-            background2='bg-radial-[at_50%_71%] from-black from-8% via-transparent via-8% to-transparent'
+            background2='bg-radial-[at_48%_71%] from-black from-8% via-transparent via-8% to-transparent'
           > <BiLogoJavascript className='size-20 md:size-20 text-yellow-300 bg-radial-[at_61%_65%] from-black from-25% via-transparent via-25% to-transparent group-hover:scale-110 transition' title='JavaScript-logo' />
           </ToolsCard>
         </a>
@@ -34,34 +34,34 @@ export function ToolsSection () {
           <ToolsCard
             backgroundShadowColors='from-orange-600 via-70% via-amber-400 to-orange-500 shadow-orange-600/50 hover:shadow-orange-600'
           >
-            <BiLogoHtml5 className='size-20 md:size-20 text-orange-500 bg-radial-[at_50%_48%] from-black from-41% via-transparent via-41% to-transparent group-hover:scale-110 transition' title='HTML5-logo' />
+            <BiLogoHtml5 className='size-20 md:size-20 text-orange-500 bg-radial-[at_50%_48%] from-white from-41% via-transparent via-41% to-transparent group-hover:scale-110 transition' title='HTML5-logo' />
           </ToolsCard>
         </a>
         <a title='CSS3-MDN' href='https://developer.mozilla.org/es/docs/Web/CSS' target='_blank' rel='noreferrer'>
           <ToolsCard
             backgroundShadowColors='from-indigo-800 via-60% via-blue-500 to-cyan-400 shadow-blue-700/50 hover:shadow-blue-600'
           >
-            <BiLogoCss3 className='size-20 md:size-20 text-blue-700 bg-radial-[at_50%_48%] from-black from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition ' title='CSS3-logo' />
+            <BiLogoCss3 className='size-20 md:size-20 text-blue-700 bg-radial-[at_50%_48%] from-gray-200 from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition ' title='CSS3-logo' />
           </ToolsCard>
         </a>
         <a title='Cplusplus-Microsoft' href='https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170' target='_blank' rel='noreferrer'>
           <ToolsCard
             backgroundShadowColors='from-indigo-700 via-60% via-blue-500 to-blue-400 shadow-blue-600/50 hover:shadow-blue-600'
           >
-            <BiLogoCPlusPlus className='size-18 md:size-20 text-indigo-600 bg-radial-[at_50%_50%] from-black from-50% via-transparent via-50% to-transparent group-hover:scale-110 transition  ' title='Cplusplus-logo' />
+            <BiLogoCPlusPlus className='size-18 md:size-20 text-blue-700 bg-radial-[at_50%_50%] from-gray-200 from-50% via-transparent via-50% to-transparent group-hover:scale-110 transition  ' title='Cplusplus-logo' />
           </ToolsCard>
         </a>
         <a title='Python-page' href='https://www.python.org/' target='_blank' rel='noreferrer'>
           <ToolsCard
             backgroundShadowColors=' from-indigo-600 to-cyan-400 shadow-indigo-600/50 hover:shadow-blue-600'
           >
-            <BiLogoPython className='size-20 md:size-20 text-indigo-600  group-hover:scale-110 transition' title='Python-logo' />
+            <BiLogoPython className='size-20 md:size-20 text-blue-600  group-hover:scale-110 transition' title='Python-logo' />
           </ToolsCard>
         </a>
         <a title='PHP-page' href='https://www.php.net/docs.php' target='_blank' rel='noreferrer'>
           <ToolsCard
             backgroundShadowColors='from-indigo-700 via-60% via-violet-500 to-violet-500 shadow-violet-600/50 hover:shadow-violet-500'
-            background2='max-w-58 bg-radial-[at_50%_50%] from-purple-600 from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition'
+            background2='max-w-58 bg-radial-[at_50%_50%] from-indigo-600/70 from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition'
           >
             <BiLogoPhp className='size-18 md:size-20 text-black group-hover:scale-105 transition ' title='PHP-logo' />
           </ToolsCard>

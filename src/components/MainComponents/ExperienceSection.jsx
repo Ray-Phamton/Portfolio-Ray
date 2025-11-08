@@ -1,5 +1,5 @@
 import { ExperienceCard } from '../Cards/ExperienceCard'
-import ContactFormModal from '../ContactFormModal'
+import ContactFormModal from '../HeaderComponents/ContactFormModal'
 import { useState } from 'react'
 
 export function ExperienceSection () {

@@ -5,7 +5,7 @@ export function SocialBubbles () {
   return (
     <>
       <a title='Telegram de Raymon' href='https://t.me/Ray_Phamton' target='_blank' rel='noreferrer'>
-        <RiTelegram2Fill className='size-16 md:size-20 text-gray-100 bg-linear-to-tr from-sky-500 via-cyan-500 via-40% to-emerald-400 p-3 rounded-full hover:shadow-lg hover:shadow-violet-500 hover:scale-125 active:translate-y-1 transition' />
+        <RiTelegram2Fill className='size-16 md:size-20 text-gray-100 bg-linear-to-tr from-sky-600 via-cyan-400 via-40% to-emerald-400 p-3 rounded-full hover:shadow-lg hover:shadow-violet-500 hover:scale-125 active:translate-y-1 transition' />
       </a>
       <a title='Instagram de Raymon' href='https://www.instagram.com/raymonreyes72?igsh=MWRicHQyNTdpNWduMA==' target='_blank' rel='noreferrer'>
         <RiInstagramLine className='size-16 md:size-20 text-gray-100 bg-linear-to-tr from-yellow-300 via-red-600 to-purple-700 p-2 rounded-full active:translate-y-1 hover:shadow-lg hover:shadow-violet-500 hover:scale-125 transition' />
