@@ -7,21 +7,25 @@ export function DesktopNavegationLinks () {
           link='#About-me'
           section='Acerca de mí'
           withVignette
+          onChange={()=> {}}
         />
         <NavegationLink
           link='#Study'
           section='Estudios'
           withVignette
+          onChange={()=> {}}
         />
         <NavegationLink
           link='#Experience'
           section='Experiencia'
           withVignette
+          onChange={()=> {}}
         />
         <NavegationLink
           link='#tools'
           section='Herramientas'
           withVignette
+          onChange={()=> {}}
         />
       </ul>
     </div>
