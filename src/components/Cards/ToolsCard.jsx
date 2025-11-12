@@ -5,7 +5,7 @@ const ToolsCard = ({
 }) => {
   const backgroundClass = `bg-linear-to-tr ${backgroundShadowColors}`
 
-  const backgroundUtility = `flex size-16 ${background2}`
+  const backgroundUtility = `flex ${background2}`
 
   return (
     <div
@@ -13,7 +13,7 @@ const ToolsCard = ({
     >
 
       <div className='flex items-center justify-center  h-full w-full'>
-        <div className={`flex items-center justify-center h-full w-full ${backgroundUtility}`}>
+        <div className={`flex items-center justify-center h-full ${backgroundUtility}`}>
           {children}
 
         </div>

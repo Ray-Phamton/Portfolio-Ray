@@ -3,7 +3,7 @@ import { BiLogoJavascript, BiLogoPhp, BiLogoHtml5, BiLogoTailwindCss, BiLogoReac
 
 export function ToolsSection () {
   return (
-    <section id='tools' className=' bg-transparent w-full p-10 rounded-3xl '>
+    <section id='tools' className=' bg-transparent w-full p-10 '>
       <header>
         <h2 className='lg:text-4xl md:text-3xl text-2xl  font-extrabold mb-4 text-gray-100 h-16 border-b border-violet-600'><span className='text-violet-600'>➣</span> Herramientas</h2>
       </header>
@@ -26,8 +26,8 @@ export function ToolsSection () {
           <ToolsCard
             backgroundShadowColors='from-yellow-400 to-orange-500 shadow-yellow-400/50 hover:shadow-yellow-300'
             borderColor='border-yellow-300'
-            background2='bg-radial-[at_48%_71%] from-black from-8% via-transparent via-8% to-transparent'
-          > <BiLogoJavascript className='size-20 md:size-20 text-yellow-300 bg-radial-[at_61%_65%] from-black from-25% via-transparent via-25% to-transparent group-hover:scale-110 transition' title='JavaScript-logo' />
+            background2='bg-radial-[at_70%_62%] from-black from-18% via-transparent via-18% to-transparent'
+          > <BiLogoJavascript className='size-20 md:size-20 text-yellow-300 bg-radial-[at_45%_65%] from-black from-24% via-transparent via-24% to-transparent group-hover:scale-110 transition' title='JavaScript-logo' />
           </ToolsCard>
         </a>
         <a title='HTML5-MDN' href='https://developer.mozilla.org/es/docs/Web/HTML' target='_blank' rel='noreferrer'>
@@ -61,7 +61,7 @@ export function ToolsSection () {
         <a title='PHP-page' href='https://www.php.net/docs.php' target='_blank' rel='noreferrer'>
           <ToolsCard
             backgroundShadowColors='from-indigo-700 via-60% via-violet-500 to-violet-500 shadow-violet-600/50 hover:shadow-violet-500'
-            background2='max-w-58 bg-radial-[at_50%_50%] from-indigo-600/70 from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition'
+            background2='max-w-58 bg-radial-[at_50%_50%] w-full from-indigo-600/70 from-40% via-transparent via-40% to-transparent group-hover:scale-110 transition'
           >
             <BiLogoPhp className='size-18 md:size-20 text-black group-hover:scale-105 transition ' title='PHP-logo' />
           </ToolsCard>
