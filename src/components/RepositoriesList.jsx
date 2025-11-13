@@ -51,7 +51,7 @@ export function RepositoriesList() {
   }
 
   return (
-    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 p-4">
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 pt-4 ">
       {repos.length > 0 ? (
         repos.map((repo) => (
           <div
@@ -81,7 +81,9 @@ export function RepositoriesList() {
 
                 <div className="flex items-center text-gray-200 xl:pl-4 mt-1">
                   <span className="mr-1">👁️</span>
-                  <span className="pr-4">{repo.watchers_count} Watchers</span>
+                  <span className="pr-4">
+                    {repo.watchers_count} observadores
+                  </span>
                   <a
                     href={repo.html_url}
                     target="_blank"
