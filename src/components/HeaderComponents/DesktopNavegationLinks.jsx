@@ -1,31 +1,31 @@
 import { NavegationLink } from './NavegationLink'
-export function DesktopNavegationLinks () {
+export function DesktopNavegationLinks() {
   return (
-    <div className='hidden md:flex justify-between py-6 max-w-7xl mx-auto '>
-      <ul className='flex whitespace-nowrap md:space-x-6 lg:space-x-24 pt-4'>
+    <div className="hidden md:flex justify-between py-6 max-w-7xl mx-auto ">
+      <ul className="flex whitespace-nowrap md:space-x-6 lg:space-x-12 xl:space-x-24 pt-4">
         <NavegationLink
-          link='#About-me'
-          section='Acerca de mí'
+          link="#About-me"
+          section="Acerca de mí"
           withVignette
-          onChange={()=> {}}
+          onChange={() => {}}
         />
         <NavegationLink
-          link='#Study'
-          section='Estudios'
+          link="#Study"
+          section="Estudios"
           withVignette
-          onChange={()=> {}}
+          onChange={() => {}}
         />
         <NavegationLink
-          link='#Experience'
-          section='Experiencia'
+          link="#Experience"
+          section="Experiencia"
           withVignette
-          onChange={()=> {}}
+          onChange={() => {}}
         />
         <NavegationLink
-          link='#tools'
-          section='Herramientas'
+          link="#tools"
+          section="Herramientas"
           withVignette
-          onChange={()=> {}}
+          onChange={() => {}}
         />
       </ul>
     </div>
