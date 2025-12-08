@@ -4,10 +4,9 @@ import { StudySection } from './MainComponents/StudySection'
 import { ToolsSection } from './MainComponents/ToolsSection'
 import { ExperienceSection } from './MainComponents/ExperienceSection'
 import { useState, useEffect } from 'react'
-import { motion } from 'motion/react'
-
 import { TiArrowUpThick } from 'react-icons/ti'
 import { RepoSection } from './MainComponents/RepoSection'
+import {motion} from "motion/react"
 
 export function Main() {
   const [isVisible, setIsVisible] = useState(false)
@@ -15,8 +14,7 @@ export function Main() {
   // Function to handle the scroll event
   const toggleVisibility = () => {
 
-    if (window.scrollY > 100) {
-      // Show the button if the scroll is greater than 300px
+    if (window.scrollY > 100) { // Show the button if the scroll is greater than 300px
 
       setIsVisible(true)
     } else {
@@ -57,9 +55,9 @@ export function Main() {
           animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="fixed border-none flex items-center justify-center bg-radial-[at_25%_80%] from-violet-700 via-75% to-black text-gray-100 rounded-full shadow-xl shadow-violet-700/50 hover:shadow-violet-700 transition duration-1000 size-16 sm:size-20 right-10 bottom-20 sm:bottom-14"
+          className='fixed border-none flex items-center justify-center bg-radial-[at_25%_80%] from-violet-700 via-75% to-black text-gray-100 rounded-full shadow-xl shadow-violet-700/50 hover:shadow-violet-700 transition duration-1000 size-16 sm:size-20 right-10 bottom-20 sm:bottom-14'
           style={{
-            pointerEvents: isVisible ? 'auto' : 'none',
+            pointerEvents: isVisible ? 'auto' : 'none'
 
           }}
         >
