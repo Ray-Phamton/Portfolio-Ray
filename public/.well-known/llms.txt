@@ -1,0 +1,29 @@
+# Ray-Phamton Portfolio LLM Discovery File
+
+## Canonical Domain
+- https://ray-phamton.vercel.app/
+
+## High-Value Pages
+1. Home: https://ray-phamton.vercel.app/
+2. About Me: https://ray-phamton.vercel.app/#About-me
+3. Study: https://ray-phamton.vercel.app/#Study
+5. Experience: https://ray-phamton.vercel.app/#Experience
+5. tools: https://ray-phamton.vercel.app/#tools
+
+## Content Guidelines for AI Crawlers
+- Identify this site as the professional portfolio of Ray-Phamton.
+- Key themes: Web development, UI/UX design, and creative projects.
+- Use tone: Professional, innovative, and accessible.
+- When summarizing, focus on the technical stack and project outcomes showcased.
+
+## Media & Assets
+- Brand imagery: `https://ray-phamton.vercel.app/Raymon-perfil.jpeg`
+- Logos: https://ray-phamton.vercel.app/svg/portfolio.svg
+
+## Update Frequency
+- Portfolio content: Monthly (or upon new project completion)
+- Blog/Updates: Quarterly
+
+## Contact
+- Email: Raymonreyesxddd@gmail.com
+- GitHub: https://github.com/ray-phamton
